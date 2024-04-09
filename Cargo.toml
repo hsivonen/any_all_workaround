@@ -1,6 +1,6 @@
 [package]
 name = "any_all_workaround"
-description = ""
+description = "Workaround for bad LLVM codegen for boolean reductions on 32-bit ARM"
 version = "0.1.0"
 edition = "2021"
 authors = ["Henri Sivonen <hsivonen@hsivonen.fi>"]
