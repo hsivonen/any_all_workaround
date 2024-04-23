@@ -7,12 +7,23 @@
 #![feature(portable_simd)]
 #![cfg_attr(
     all(
+        stdsimd_split,
         target_arch = "arm",
         target_endian = "little",
         target_feature = "neon",
         target_feature = "v7"
     ),
     feature(stdarch_arm_neon_intrinsics)
+)]
+#![cfg_attr(
+    all(
+        not(stdsimd_split),
+        target_arch = "arm",
+        target_endian = "little",
+        target_feature = "neon",
+        target_feature = "v7"
+    ),
+    feature(stdsimd)
 )]
 
 use cfg_if::cfg_if;

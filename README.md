@@ -10,4 +10,4 @@ This crate requires Nightly Rust as it depends on the `portable_simd` feature.
 
 # License
 
-`MIT OR Apache-2.0`, since that's how `packed_simd` is licensed.
+`MIT OR Apache-2.0`, since that's how `packed_simd` is licensed. (The ARM intrinsics Rust version workaround is from qcms, see LICENSE-MIT-QCMS.)
